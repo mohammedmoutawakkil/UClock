@@ -1,0 +1,123 @@
+*{
+	
+	box-sizing: border-box;
+	font-family: 'exo 2', sans-serif;
+
+}
+body{
+	background: linear-gradient(to right, hsl(200, 100%, 50%), hsl(200, 100%, 50%));
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.clock{
+	width: 300px;
+	height: 300px;
+	background-color: rgba(255, 255, 255, .8);
+	border:12px inset black;
+	border-radius: 50%;
+	outline: none;
+	position: relative;
+	top: 150px;
+	
+	box-shadow: inset 10px 10px 25px black, 7px 10px 15px black;
+	
+}
+
+.clock::after {
+  content: '';
+  position: absolute;
+  background-color: black;
+  z-index: 11;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.clock .number{
+	--rotation:0;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	transform: rotate(var(--rotation));
+	font-size: 1.5rem;
+	padding: 6px;
+}
+.number:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 3px;
+	height: 7px;
+	background-color: black;
+}
+.clock .number1 { --rotation: 30deg; }
+.clock .number1 div{ transform: rotate(-30deg); }
+.clock .number2 { --rotation: 60deg; }
+.clock .number2 div{ transform: rotate(-60deg); }
+.clock .number3 { --rotation: 90deg; }
+.clock .number3 div{ transform: rotate(-90deg);}
+.clock .number4 { --rotation: 120deg; }
+.clock .number4 div{ transform: rotate(-120deg); }
+.clock .number5 { --rotation: 150deg; }
+.clock .number5 div{ transform: rotate(-150deg); }
+.clock .number6 { --rotation: 180deg; }
+.clock .number6 { transform: rotate(-180deg); }
+.clock .number7 { --rotation: 210deg; }
+.clock .number7 div{ transform: rotate(-210deg); }
+.clock .number8 { --rotation: 240deg; }
+.clock .number8 div{ transform: rotate(-240deg); }
+.clock .number9 { --rotation: 270deg; }
+.clock .number9 div{ transform: rotate(-270deg); }
+.clock .number10 { --rotation: 300deg;}
+.clock .number10 div{ transform: rotate(-300deg);}
+.clock .number11 { --rotation: 330deg; }
+.clock .number11 div{ transform: rotate(-330deg); }
+.hand{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.hand div{
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	
+	z-index: 10;
+}
+
+.sec{
+	width: 1px;
+	height: 40%;
+	background-color: red;
+}
+
+.min{
+	height: 38%;
+	width: 3px;
+	border-radius: 2px;
+	background-color: black;
+}
+
+.hour{
+	height: 28%;
+	width: 6px;
+	border-radius: 4px;
+	background-color: black;
+}
+
+
+
