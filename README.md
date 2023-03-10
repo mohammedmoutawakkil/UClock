@@ -1,6 +1,6 @@
 ![Screenshot 2021-07-09 125120](https://user-images.githubusercontent.com/70536218/125074136-cc39b080-e0b4-11eb-89d9-25affd018e1c.png)
 
-# Clock Project
+# UClock
 
 This is a clock project that displays the current time in hours, minutes, and seconds, with a sleek design that is optimized for mobile and desktop devices. It was built using HTML, CSS, and JavaScript.
 
